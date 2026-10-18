@@ -33,7 +33,7 @@
 | **Backblaze B2** 桶 `holo-figure` | `holo-concepts-20260927/`：概念圖<br>`figure-design/`：早期專案（git bundle）、`models/` 舊 Tripo 模型（第 28–30 輪、蘋果）<br>`tripo-cloud-20261015/`：**舊** manifest（`manifest/`）與程式備份（`code/`）；其中若有 `final/` 是舊成品 | 免費額度 10 GB；**每日下載約 1 GB**、下載類請求也有每日上限，撞到會出現 `download_cap_exceeded`／`storage_cap_exceeded`，00:00 UTC 重置。**下載前先估量**。上傳不受下載額度影響 |
 | Tripo 帳號 | 所有生成過的原始模型 | 用任務 ID 重新下載 |
 
-- 新成品**只放 R2 `final/`**，不再放 B2。
+- **後續所有新檔案都只放 R2**（成品、manifest、封存、程式備份、概念圖等，使用者 2026-10-18 決定）。B2 只當舊資料的唯讀來源，不再上傳新東西；需要的舊檔可以搬到 R2。
 - R2 工具：雲端容器用 Cloudflare 官方的 `cf` CLI，裝置登入（使用者在瀏覽器輸入驗證碼）；若容器裡沒有 `cf`，Cloudflare 的 `wrangler` 也能操作 R2。CLI 會在當前目錄留快取資料夾，不要讓它被 commit 或上傳。
 - 封存索引 `archive/<日期>/INDEX.json`：每個檔案的原路徑、大小、md5、狀態（OK／否決／暫存）。核對 R2 上的大小與 md5 後才刪本機。
 
