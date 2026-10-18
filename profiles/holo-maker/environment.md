@@ -22,7 +22,7 @@
 
 ## 圖像生成／編輯
 
-- **一律用 Tripo Studio 的圖片生成**（透過 auto-tripo 的 image CLI，可帶多張參考圖），使用者 2026-10-18 決定。前 1000 次生成免費；Studio 上有 gpt-image 2 可選（也有 nano-banana）。開工前先用 CLI 列出可用模型確認。
+- **一律用 Tripo Studio 的圖片生成**（透過 auto-tripo 的 image CLI，可帶多張參考圖），使用者 2026-10-18 決定。前 1000 次生成免費；Studio 上有 gpt-image 2.5 可選（也有 nano-banana）。開工前先用 CLI 列出可用模型確認。
 - 用途：概念圖、去配件正面圖、配件（尾巴）圖、雙參考重畫背面、上下半身零件圖。
 - 舊做法（10/15–10/18 用過）：OpenAI 相容的圖像 API（雲端代理帶認證）。之後不再用。
 - manifest 要記每次生圖的任務 ID 與使用的模型。
